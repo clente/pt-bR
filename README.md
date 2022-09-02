@@ -241,7 +241,7 @@ com um asterisco \* são aquelas que nós mesmos estamos questionando.
 | IO                   | IO                                           |
 | label                | rótulo                                       |
 | lag                  | defasagem                                    |
-| layout               | layout ou estrutura????                      |
+| layout               | layout\*                                     |
 | lazy loading         | lazy loading\*                               |
 | lazydata             | lazydata                                     |
 | leading minor        | submatriz\*                                  |
