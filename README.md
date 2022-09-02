@@ -138,7 +138,7 @@ português, aqui ele está fazendo fazendo o papel de "o argumento".
 
 Em certas situações, conseguimos simplesmente remover a necessidade de
 especificar um gênero gramatical. Na expressão abaixo poderíamos traduzir o
-papel para "autor(a)", mas temos margem para o termo completamente.
+papel para "autor(a)", mas temos margem para omitir o termo completamente.
 
 > _Authors@R field gives no person with name and author role_
 
