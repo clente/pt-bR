@@ -137,12 +137,12 @@ português, aqui ele está fazendo fazendo o papel de "o argumento".
 > 'scale' deve ser numérico ou NULL
 
 Em certas situações, conseguimos simplesmente remover a necessidade de
-especificar um gênero gramatical. Na expressão abaixo poderíamos terminar a
-frase com "ele(a) é", mas temos margem para omitir o artigo completamente.
+especificar um gênero gramatical. Na expressão abaixo poderíamos traduzir o
+papel para "autor(a)", mas temos margem para o termo completamente.
 
-> _according to the DESCRIPTION file it is_
+> _Authors@R field gives no person with name and author role_
 
-> de acordo com o arquivo DESCRIPTION é
+> Campo Authors@R não fornece nenhuma pessoa com nome e papel 'author'
 
 Em raras situações, as mensagens fazem referência a quem está programando.
 Nestes casos o melhor que podemos fazer sem prejudicar a compreensão ou aumentar
@@ -175,136 +175,165 @@ Por fim, optamos por manter alguns dos termo em inglês, pois suas traduções s
 pouco utilizadas, mas essa percepção é meramente subjetiva; as palavras marcadas
 com um asterisco \* são aquelas que nós mesmos estamos questionando.
 
-| Inglês             | Português                                    |
-|:-------------------|:---------------------------------------------|
-| abort              | interromper                                  |
-| allocate           | alocar                                       |
-| argument           | argumento                                    |
-| array              | array                                        |
-| assign             | atribuir                                     |
-| attach             | anexar                                       |
-| attribute          | atributo                                     |
-| backslash          | barra invertida                              |
-| bind               | associar / vincular                          |
-| bitmap             | bitmap                                       |
-| boxplot            | boxplot                                      |
-| break              | limite de categoria (para histogramas)       |
-| browser            | navegador                                    |
-| bytecode           | bytecode                                     |
-| cache              | cachear                                      |
-| call               | chamar                                       |
-| callback           | callback                                     |
-| character string   | string de caracteres\*                       |
-| closure            | closure                                      |
-| coerce             | fazer coerção                                |
-| colortype          | colortype                                    |
-| console            | console                                      |
-| data frame         | data frame                                   |
-| database           | base de dados                                |
-| defunct            | extinto                                      |
-| deparse            | deparse                                      |
-| deprecated         | obsoleto                                     |
-| device             | dispositivo                                  |
-| dispatch           | despachar                                    |
-| download           | baixar                                       |
-| driver             | driver                                       |
-| drop               | descartar                                    |
-| encoding           | codificação                                  |
-| environment        | ambiente                                     |
-| factor             | fator                                        |
-| fifo               | fifo (de _first in, first out_)              |
-| file stream        | stream de arquivo                            |
-| filename           | nome do arquivo                              |
-| fit                | ajustar                                      |
-| flush              | esvaziar                                     |
-| frame              | quadro (para _stack_) / escopo (para _call_) |
-| handle             | gerenciar                                    |
-| history            | histórico                                    |
-| implement          | implementar                                  |
-| index              | índice                                       |
-| invalid            | inválido                                     |
-| IO                 | IO                                           |
-| label              | rótulo                                       |
-| lag                | defasagem                                    |
-| layout             | layout                                       |
-| lazy loading       | lazy loading\*                               |
-| lazydata           | lazydata                                     |
-| leading minor      | submatriz\*                                  |
-| length             | comprimento                                  |
-| library            | biblioteca                                   |
-| locale             | locale                                       |
-| locator            | localizador                                  |
-| logical            | lógico (ao invés de booleano)                |
-| magic number       | número mágico                                |
-| match              | corresponder                                 |
-| metafile           | metafile                                     |
-| mirror             | espelho (por exemplo, do CRAN)               |
-| mismatch           | incompatível                                 |
-| missing            | ausente                                      |
-| modulus            | módulo                                       |
-| multibyte          | multibyte                                    |
-| namespace          | namespace\*                                  |
-| non-numeric type   | tipo não numérico                            |
-| numeric-alike      | numérico ou similar\*                        |
-| offset             | deslocar / compensar (depende do contexto)   |
-| opcode             | opcode                                       |
-| outlier            | outlier\*                                    |
-| overflow           | overflow                                     |
-| package            | pacote                                       |
-| pager              | visualizador\*                               |
-| pair list          | lista pareada                                |
-| parse              | analisar\*                                   |
-| path               | caminho                                      |
-| pipe               | pipe                                         |
-| pixmap             | pixmap                                       |
-| platform           | plataforma                                   |
-| polyline           | polyline                                     |
-| port               | porta (por exemplo, 8080)                    |
-| profiling          | análise de desempenho                        |
-| promise            | promessa                                     |
-| prompt             | prompt                                       |
-| proxy              | proxy                                        |
-| push back          | voltar atrás                                 |
-| quote symbol       | símbolo de citação                           |
-| range              | intervalo / limite (depende do contexto)     |
-| raw                | raw (para o tipo de dado)                    |
-| redraw             | redesenhar                                   |
-| regular expression | expressão regular                            |
-| replace            | substituir                                   |
-| report             | reportar                                     |
-| repository         | repositório                                  |
-| require            | requerer                                     |
-| return             | retornar                                     |
-| RNG                | RNG                                          |
-| routine            | rotina                                       |
-| run                | executar                                     |
-| seal               | selar                                        |
-| search path        | caminho de busca                             |
-| seed               | semente                                      |
-| seek               | buscar                                       |
-| sink               | sink                                         |
-| slash              | barra                                        |
-| slot               | slot (termo do R)\*                          |
-| snapshot           | snapshot                                     |
-| socket             | soquete                                      |
-| source             | carregar                                     |
-| splice             | juntar                                       |
-| stack              | stack\*                                      |
-| subscript          | índice\*                                     |
-| subset             | dividir em subconjuntos                      |
-| tag                | etiqueta                                     |
-| thread             | thread\*                                     |
-| timeout            | limite de tempo                              |
-| timer              | cronômetro                                   |
-| timezone           | fuso horário                                 |
-| top level          | nível superior                               |
-| traceback          | traceback                                    |
-| truncate           | truncar                                      |
-| unary operator     | operador unário                              |
-| unbind             | desvincular                                  |
-| underflow          | underflow                                    |
-| viewport           | viewport                                     |
-| vignette           | vignette                                     |
-| warning            | alerta                                       |
-| workspace          | ambiente de trabalho                         |
-| wrapup             | finalização\*                                |
+| Inglês               | Português                                    |
+|:---------------------|:---------------------------------------------|
+| abort                | interromper                                  |
+| alias                | alias\*                                      |
+| allocate             | alocar                                       |
+| argument             | argumento                                    |
+| array                | array                                        |
+| assign               | atribuir                                     |
+| attach               | anexar                                       |
+| attribute            | atributo                                     |
+| backslash            | barra invertida                              |
+| bind                 | associar / vincular                          |
+| bitmap               | bitmap                                       |
+| boxplot              | boxplot                                      |
+| break                | limite de categoria (para histogramas)       |
+| browser              | navegador                                    |
+| build                | compilar                                     |
+| bytecode             | bytecode                                     |
+| cache                | cachear                                      |
+| call                 | chamar                                       |
+| callback             | callback                                     |
+| character string     | string de caracteres\*                       |
+| check                | verificar                                    |
+| chunk                | bloco (de código)\*                          |
+| closure              | closure                                      |
+| codoc                | codoc (da função do R)                       |
+| coerce               | fazer coerção                                |
+| colortype            | colortype                                    |
+| console              | console                                      |
+| data frame           | data frame                                   |
+| database             | base de dados                                |
+| dataset              | conjunto de dados                            |
+| debug                | depurar\*                                    |
+| defunct              | extinto                                      |
+| deparse              | deparse                                      |
+| deprecated           | obsoleto                                     |
+| detach               | detach\*                                     |
+| device               | dispositivo                                  |
+| dispatch             | despachar                                    |
+| documentation object | objeto de documentação\*                     |
+| download             | baixar                                       |
+| driver               | driver                                       |
+| drop                 | descartar                                    |
+| encoding             | codificação                                  |
+| entry                | registro / campo                             |
+| environment          | ambiente                                     |
+| evaluate             | avaliar (por exemplo, `eval()`)\*            |
+| factor               | fator                                        |
+| fifo                 | fifo (de _first in, first out_)              |
+| file pointer         | ponteiro de arquivo\*                        |
+| file stream          | stream de arquivo                            |
+| filename             | nome do arquivo                              |
+| fit                  | ajustar                                      |
+| flag                 | flag                                         |
+| flush                | esvaziar                                     |
+| frame                | quadro (para _stack_) / escopo (para _call_) |
+| handle               | gerenciar                                    |
+| hard-coded           | hard-coded\*                                 |
+| history              | histórico                                    |
+| implement            | implementar                                  |
+| incoming checks      | verificações de recebimento\*                |
+| index                | índice                                       |
+| invalid              | inválido                                     |
+| IO                   | IO                                           |
+| label                | rótulo                                       |
+| lag                  | defasagem                                    |
+| layout               | layout ou estrutura????                      |
+| lazy loading         | lazy loading\*                               |
+| lazydata             | lazydata                                     |
+| leading minor        | submatriz\*                                  |
+| length               | comprimento                                  |
+| library              | biblioteca                                   |
+| link                 | link                                         |
+| locale               | locale                                       |
+| locator              | localizador                                  |
+| locking              | travamento\*                                 |
+| logical              | lógico (ao invés de booleano)                |
+| macro                | macro                                        |
+| magic number         | número mágico                                |
+| match                | corresponder                                 |
+| metafile             | metafile                                     |
+| mirror               | espelho (por exemplo, do CRAN)               |
+| mismatch             | incompatível                                 |
+| missing              | ausente                                      |
+| modulus              | módulo                                       |
+| multibyte            | multibyte                                    |
+| namespace            | namespace\*                                  |
+| non-numeric type     | tipo não numérico                            |
+| numeric-alike        | numérico ou similar\*                        |
+| offending            | problemático                                 |
+| offset               | deslocar / compensar (depende do contexto)   |
+| opcode               | opcode                                       |
+| outlier              | outlier\*                                    |
+| overflow             | overflow                                     |
+| override             | sobrescrever                                 |
+| package              | pacote                                       |
+| pager                | visualizador\*                               |
+| pair list            | lista pareada                                |
+| parse                | analisar\*                                   |
+| path                 | caminho                                      |
+| pipe                 | pipe                                         |
+| pixmap               | pixmap                                       |
+| platform             | plataforma                                   |
+| polyline             | polyline                                     |
+| port                 | porta (por exemplo, 8080)                    |
+| portable             | portável                                     |
+| profiling            | análise de desempenho                        |
+| promise              | promessa                                     |
+| prompt               | prompt                                       |
+| proxy                | proxy                                        |
+| push back            | voltar atrás                                 |
+| quote symbol         | símbolo de citação                           |
+| range                | intervalo / limite (depende do contexto)     |
+| raw                  | raw (para o tipo de dado)                    |
+| redraw               | redesenhar                                   |
+| regular expression   | expressão regular                            |
+| replace              | substituir                                   |
+| report               | reportar                                     |
+| repository           | repositório                                  |
+| require              | requerer\*                                   |
+| return               | retornar                                     |
+| RNG                  | RNG                                          |
+| role                 | papel\*                                      |
+| routine              | rotina                                       |
+| run                  | executar                                     |
+| seal                 | selar                                        |
+| search path          | caminho de busca                             |
+| seed                 | semente                                      |
+| seek                 | buscar                                       |
+| sink                 | sink                                         |
+| slash                | barra                                        |
+| slot                 | slot (termo do R)\*                          |
+| snapshot             | snapshot                                     |
+| socket               | soquete                                      |
+| source               | carregar                                     |
+| splice               | juntar                                       |
+| stack                | stack\*                                      |
+| standardizable       | padronizável                                 |
+| startup              | inicialização                                |
+| strict               | rigoroso(a)                                  |
+| subscript            | índice\*                                     |
+| subset               | dividir em subconjuntos                      |
+| tag                  | etiqueta                                     |
+| tag                  | tag\*                                        |
+| tangling             | tangling\*                                   |
+| tarball              | tarball                                      |
+| template             | modelo\*                                     |
+| thread               | thread\*                                     |
+| timeout              | limite de tempo                              |
+| timer                | cronômetro                                   |
+| timezone             | fuso horário                                 |
+| top level            | nível superior                               |
+| traceback            | traceback                                    |
+| truncate             | truncar                                      |
+| unary operator       | operador unário                              |
+| unbind               | desvincular                                  |
+| underflow            | underflow                                    |
+| viewport             | viewport                                     |
+| vignette             | vignette                                     |
+| warning              | alerta                                       |
+| workspace            | ambiente de trabalho                         |
+| wrapup               | finalização\*                                |
