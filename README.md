@@ -262,6 +262,7 @@ com um asterisco \* são aquelas que nós mesmos estamos questionando.
 | modulus              | módulo                                       |
 | multibyte            | multibyte                                    |
 | namespace            | namespace\*                                  |
+| non-interactively    | de forma não interativa                      |
 | non-numeric type     | tipo não numérico                            |
 | numeric-alike        | numérico ou similar\*                        |
 | offending            | problemático                                 |
@@ -282,6 +283,7 @@ com um asterisco \* são aquelas que nós mesmos estamos questionando.
 | port                 | porta (por exemplo, 8080)                    |
 | portable             | portável                                     |
 | profiling            | análise de desempenho                        |
+| profile              | perfil (substantivo), perfilar (verbo)       | 
 | promise              | promessa                                     |
 | prompt               | prompt                                       |
 | proxy                | proxy                                        |
@@ -332,6 +334,7 @@ com um asterisco \* são aquelas que nós mesmos estamos questionando.
 | unary operator       | operador unário                              |
 | unbind               | desvincular                                  |
 | underflow            | underflow                                    |
+| unlisted             | não listado                                  |
 | viewport             | viewport                                     |
 | vignette             | vignette                                     |
 | warning              | alerta                                       |
