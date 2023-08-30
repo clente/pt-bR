@@ -86,93 +86,95 @@ sentence.
 > impossível utilizar xtfrm em um data frame
 
 
-### Formatação
+### Formatting
 
-O uso de espaços e parágrafos em português é normatizado e bem estabelecido. Os
-textos do R, entretanto, têm limitações de espaço e formatação que nem sempre
-são óbvias no momento da tradução.
+The use of spaces and paragraphs in Portuguese is standardised and well
+established. R texts, however, have space and formatting limitations that are
+not always obvious when translating.
 
-Grande parte das mensagens do R possui algum tipo de referência ao código que a
-gerou. Isso ocorre através de
-[especificadores](https://cplusplus.com/reference/cstdio/printf/) de formato e
-precisamos mantê-los na mesma ordem em que eles aparecem no texto de referência.
+Most R messages have some kind of reference to the code that generated them.
+This happens through [format
+specifiers](https://cplusplus.com/reference/cstdio/printf/) and we need to keep
+them in the same order as they appear in the reference text.
 
 > _%s and %s must have the same length_
 
 > %s e %s devem ter o mesmo comprimento
 
-Se não for possível manter a mesma ordem, é necessário especificar o índice da
-substituição desejada com `%n$<fmt>` (e.g. `%1$s`, `%2$s`, e assim por diante).
+If it's not possible to keep the same order, you need to specify the index of
+the desired substitution with `%n$<fmt>` (e.g. `%1$s`, `%2$s`, and so on).
 
-As mensagens também podem ter caracteres especiais como aspas simples (`'`),
-aspas duplas (`"`), tabs (`\t`) e novas linhas (`\n`), além de espaços extras em
-lugares estranhos. Para manter um padrão, não alteramos esse tipo de formatação
-mesmo que seu uso não seja estritamente correto.
+Messages can also have special characters such as single quotes (`'`), double
+quotes (`"`), tabs (`\t`) and new lines (`\n`), as well as extra spaces in
+strange places. To maintain a standard, we don't change this type of formatting
+even if its use is not strictly correct.
 
 > _Conflicts attaching package %s:<br>%s_
 
 > Conflitos ao anexar pacote %s:<br>%s
 
-### Gênero
+### Gender
 
-O inglês, diferentemente do português, não tem gênero gramatical. Sempre que
-possível tentamos seguir o
-[Manual para Uso não Sexista da Linguagem](https://edisciplinas.usp.br/pluginfile.php/3034366/mod_resource/content/1/Manual%20para%20uso%20n%C3%A3o%20sexista%20da%20linguagem.pdf)
-nas traduções, mas infelizmente isso nem sempre é viável.
+Unlike Portuguese, English does not specify grammatical gender. We will try to
+follow the [Manual for Non Sexist Use of Language (in
+Portuguese)](https://edisciplinas.usp.br/pluginfile.php/3034366/mod_resource/content/1/Manual%20para%20uso%20n%C3%A3o%20sexista%20da%20linguagem.pdf)
+in translations as much as we can, but unfortunately that is not always
+possible.
 
-O gênero gramatical de argumentos, siglas e outros substantivos inanimados pode,
-no geral, ser inferido pelo contexto. Na tradução abaixo, consideramos "_DLL_"
-como sendo "a biblioteca de vínculo dinâmico".
+Grammatical gender of arguments, acronyms and other nouns can usually be
+inferred by context. In the example below, we translate "_DLL_" as "a
+biblioteca de vínculo dinâmico" (dynamic-link library).
 
 > _DLL %s was not loaded_
 
 > DLL %s não foi carregada
 
-Já na tradução seguinte, apesar de "_scale_" ser um substantivo feminino em
-português, aqui ele está fazendo fazendo o papel de "o argumento".
+In the following example, although "_scale_" is a feminine noun in Portuguese,
+the masculine is used because it is replacing "_argument_", "o argumento", which
+is a masculine noun.
 
 > _'scale' should be numeric or NULL_
 
 > 'scale' deve ser numérico ou NULL
 
-Em certas situações, conseguimos simplesmente remover a necessidade de
-especificar um gênero gramatical. Na expressão abaixo poderíamos traduzir o
-papel para "autor(a)", mas temos margem para omitir o termo completamente.
+In certain situations, we can simply ignore genders. In the following
+expression, we could translate "_author_" to "autor(a)", but there are
+alternatives that allow us to completely omit it.
 
 > _Authors@R field gives no person with name and author role_
 
 > Campo Authors@R não fornece nenhuma pessoa com nome e papel 'author'
 
-Em raras situações, as mensagens fazem referência a quem está programando.
-Nestes casos o melhor que podemos fazer sem prejudicar a compreensão ou aumentar
-muito o comprimento da frase é recorrer ao "o(a)".
+In rare cases, the messeges references who doing the programming. In
+these cases, the best we can do without jeopardising comprehension or overly
+increasing the length of the sentence is to use "o(a)".
 
 > _Not enough arguments passed to user macro '%s'_
 
 > Não foram passados argumentos suficientes para a macro '%s' do(a) usuário(a)
 
-É importante ressaltar que esta estratégia não é adotada pelos times da França e
-da Itália, que preferem simplesmente utilizar o masculino "usuário". A menos que
-haja alguma diretriz desencorajando recursos como "o(a)", acreditamos que o
-nosso padrão é preferível.
+It's important to note that this strategy is not adopted by the French and
+Italian teams, who prefer to simply use the masculine term "usuário". Unless
+there is some guideline discouraging resources such as "o(a)", we believe that
+our standard is preferable.
 
-### Glossário
+### Glossary
 
-Aqui reunimos alguns termos que aparecem repetidamente nas mensagens do R e que
-podem ser difíceis de traduzir. Caso você tenha problemas com uma palavra que
-não está no [glossário](https://www.isi-web.org/isi.cbs.nl/glossary/) do ISI
-nem na tabela abaixo, procure a tradução no [Linguee](https://www.linguee.com)
-ou na Wikipédia e nos avise para que possamos incluí-la nesta seção.
+Here we have put together some terms that appear repeatedly in R messages and
+which can be difficult to translate. If you have problems with a word that is
+not in the table below, look up the translation on
+[Linguee](https://www.linguee.com) or Wikipedia and let us know so we can
+include it in this section.
 
-Tentamos registrar as versões mais comuns de cada termo, contudo nem sempre é
-possível fazer uma contabilização precisa. Por exemplo, se você estiver
-procurando por "_caching_", o verbete correspondente é "_cache_". Uma mesma
-palavra também pode ter várias funções, como "_replacement_", que
-simultaneamente significa "substituto" e "substituição".
+We have tried to use the most common versions of each term, but it's not always
+possible to keep a precise account. For example, if you are searching for
+"_caching_", the corresponding entry is "_cache_". The same word can also have
+several functions, such as "_replacement_", which simultaneously means
+"substituto" and "substituição".
 
-Por fim, optamos por manter alguns dos termo em inglês, pois suas traduções são
-pouco utilizadas, mas essa percepção é meramente subjetiva; as palavras marcadas
-com um asterisco \* são aquelas que nós mesmos estamos questionando.
+Finally, we have chosen to keep some of the terms in English, as their
+translations are not widely used, but this perception is purely subjective; the
+words marked with an asterisk \* are those that we ourselves are questioning.
 
 | Inglês               | Português                                    |
 |:---------------------|:---------------------------------------------|
