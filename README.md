@@ -4,83 +4,82 @@
 [![MIT license](https://img.shields.io/github/license/clente/pt-bR)](https://github.com/clente/pt-bR/blob/main/LICENSE)
 
 _This repository is a hub for all people who want to help translate R into
-Brazilian Portuguese. The rest of the README in in PT-BR, but non-Portuguese
-speakers can reach out to [@ctlente](https://twitter.com/ctlente) on Twitter if
-they need any additional information about the project._
+Brazilian Portuguese. This README is in English, but you can reach out to
+[@ctlente](https://twitter.com/ctlente) on Twitter if you need any additional
+information about the project._
 
-## Sobre
+## About
 
-O projeto pt-bR tem por objetivo reunir todas as pessoas interessadas em ajudar
-a traduzir a linguagem
-[R](https://en.wikipedia.org/wiki/R_(programming_language)) de programação para
-o português brasileiro 🇧🇷 Se você sabe falar inglês e usa R com frequência,
-precisamos da sua ajuda!
+The goal of the pt-bR project is to bring together all people interested in
+helping translate the [R
+language](https://en.wikipedia.org/wiki/R_(programming_language)) into Brazilian
+Portuguese 🇧🇷 If you use R a lot, we need your help!
 
-Diferentemente de outras linguagens, o R tenta exibir todas as suas mensagens no
-mesmo idioma do computador em que ele é executado. Em princípio, isso reduz a
-barreira de entrada para aprender R; alertas e erros são muito comuns no código
-de quem está começando a programar, então o ideal é que essas mensagens sejam
-o menos obscuras possível.
+Unlike other languages, R tries to display every message in the same language as
+the computer it's running on. In principle, this reduces R's barrier to entry;
+warnings and errors are very common in code written by beginners, so it's
+essential that these messages are as clear as possible.
 
-Vários outros países já têm
-[times](https://developer.r-project.org/TranslationTeams.html) consolidados de
-tradução, mas (talvez por causa da complexidade do
-[processo](https://developer.r-project.org/Translations30.html) de contribuição)
-o Brasil estava sem nenhum colaborador oficial. Hoje em dia, entretanto, ficou
-mais fácil do que nunca ajudar na tradução e por isso quisemos reunir aqui os
-nossos esforços.
+Many other countries already have consolidated translation
+[teams](https://developer.r-project.org/TranslationTeams.html), but (maybe
+because of the complexity of the
+[job](https://developer.r-project.org/Translations30.html)) Brazil lacked any
+official collaborators. Nowadays, however, it's easier than ever to help with
+translations and that's why we wanted to collect our efforts on this page.
 
-Para ajudar no esforço de tradução, você precisa:
+To help in the translation process, you need to:
 
-1. Entrar no [Slack](https://contributor.r-project.org/slack) R Contributors e
-apresentar-se no canal `#core-translations`;
-1. Ler a sessão [Recursos](https://github.com/clente/pt-bR#recursos) deste
-documento, pois a tradução tem convenções que devem ser seguidas;
-1. Criar uma conta na instância do [Weblate](https://translate.rx.studio/)
-(atualmente mantida por [@daroczig](https://twitter.com/daroczig));
-1. Listar todos os
-[componentes](https://translate.rx.studio/languages/pt_BR/r-project/) do
-português brasileiro;
-1. Escolher um componente que não esteja 100% traduzido (como, por exemplo, o
-pacote [utils](https://translate.rx.studio/projects/r-project/utils-r/pt_BR/));
-1. Clicar em _Unfinished strings_ para listar todas as mensagens que ainda não
-foram traduzidas e
-1. Começar!
+1. Sign up to the [R Contributors
+   Slack](https://contributor.r-project.org/slack) and introduce yourself in the
+   `#core-translations` channel;
+1. Read the [Resources](https://github.com/clente/pt-bR#resources) section of
+   this document, because the translation has some conventions that should be
+   followed;
+1. Create an account on [Weblate](https://translate.rx.studio/) (currently
+   maintained by [@daroczig](https://twitter.com/daroczig));
+1. List every Brazilian Portuguese
+   [component](https://translate.rx.studio/languages/pt_BR/r-project/);
+1. Choose a component that's not 100% translated (like, for example, the [utils
+   package](https://translate.rx.studio/projects/r-project/utils-r/pt_BR/));
+1. Click **Unfinished strings** to list all messages that haven't been
+   translated and
+1. Start!
 
-## Recursos
+## Resources
 
-Este é um documento vivo que lista alguns problemas comuns no processo de
-tradução do R para o português brasileiro. Todas as sugestões estão abertas a
-revisão e, se você discordar de alguma coisa, é só abrir uma
-[issue](https://github.com/clente/pt-bR/issues) ou criar um novo tópico na área
-de [discussões](https://github.com/clente/pt-bR/discussions).
+This is a living document that lists some common problems that come up when
+translating R to Brazilian Portuguese. Every suggestion here is open to debate
+and, if you disagree about something, simply create an
+[issue](https://github.com/clente/pt-bR/issues) or a new topic in the
+[discussions](https://github.com/clente/pt-bR/discussions) tab.
 
-### Estilística
+### Style
 
-O R é uma linguagem com quase 30 anos e, portanto, suas mensagens foram escritas
-por muitas pessoas com estilos bem diferentes. Sempre devemos seguir as regras
-gramaticais e ortográficas do português, incluindo o novo
-[Acordo Ortográfico](https://www2.senado.leg.br/bdsf/bitstream/handle/id/508145/000997415.pdf),
-mas também queremos preservar o máximo possível a linguagem original.
+R is a programming language that's almost 30 years old and, therefore, its
+messages were written by many people with very different writing styles. We
+should always follow Portuguese's grammar and orthography, including the new
+[Spelling
+Reform](https://www2.senado.leg.br/bdsf/bitstream/handle/id/508145/000997415.pdf),
+but we also want to preserve the original language as much as possible.
 
-Em inglês é possível omitir diversos conectores sem prejudicar o entendimento.
-Os times da Itália e da França costumam recolocar esses conectores quando a
-alternativa ficaria pouco sintática.
+In English it is possible to omit many connectors without changing the meaning.
+The Italian and French teams usually restore these connectors when the
+alternative wouldn't sound as natural.
 
 > _Maybe package installed with version of R newer than %s ?_
 
 > Talvez o pacote tenha sido instalado com uma versão do R mais recente que %s ?
 
-Também não traduzimos nada que seja um termo técnico do R como, por exemplo,
-nomes de funções, objetos e argumentos (geralmente entre aspas).
+We also don't translate anything that is a technical term form R like, for
+example, function names, objects and arguments (usually between quotes).
 
 > _'MARGIN' does not match dim(X)_
 
 > 'MARGIN' não corresponde a dim(X)
 
-Em ocasiões excepcionais, uma função pode ser utilizada como verbo. Seguindo o
-exemplo dos times da França e da Itália, a única saída é reconstruir a frase
-completamente:
+In exceptional situations, a function can be used as a verb. Following the
+French and Italian teams, the only solution is to completely reconstruct the
+sentence.
 
 > _cannot xtfrm data frames_
 
@@ -283,7 +282,7 @@ com um asterisco \* são aquelas que nós mesmos estamos questionando.
 | port                 | porta (por exemplo, 8080)                    |
 | portable             | portável                                     |
 | profiling            | análise de desempenho                        |
-| profile              | perfil (substantivo), perfilar (verbo)       | 
+| profile              | perfil (substantivo), perfilar (verbo)       |
 | promise              | promessa                                     |
 | prompt               | prompt                                       |
 | proxy                | proxy                                        |
