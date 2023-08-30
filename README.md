@@ -116,15 +116,15 @@ even if its use is not strictly correct.
 
 ### Gender
 
-Differently from Portuguese, English does not specify grammatical gender. We
-will try to follow the [Manual for Non Sexist Use of Language (in
+Unlike Portuguese, English does not specify grammatical gender. We will try to
+follow the [Manual for Non Sexist Use of Language (in
 Portuguese)](https://edisciplinas.usp.br/pluginfile.php/3034366/mod_resource/content/1/Manual%20para%20uso%20n%C3%A3o%20sexista%20da%20linguagem.pdf)
-in translations as much as we canm but unfortunately that is not always nas
-traduções, mas infelizmente isso nem sempre é viável.
+in translations as much as we can, but unfortunately that is not always
+possible.
 
 Grammatical gender of arguments, acronyms and other nouns can usually be
 inferred by context. In the example below, we translate "_DLL_" as "a
-biblioteca de vínculo dinâmico" (dynamic link library).
+biblioteca de vínculo dinâmico" (dynamic-link library).
 
 > _DLL %s was not loaded_
 
@@ -146,8 +146,8 @@ alternatives that allow us to completely omit it.
 
 > Campo Authors@R não fornece nenhuma pessoa com nome e papel 'author'
 
-In rare cases, the messeges make reference to who is doind the programming. In
-these cases, the best we can do without jeopardising comprehension or overtly
+In rare cases, the messeges references who doing the programming. In
+these cases, the best we can do without jeopardising comprehension or overly
 increasing the length of the sentence is to use "o(a)".
 
 > _Not enough arguments passed to user macro '%s'_
@@ -157,7 +157,7 @@ increasing the length of the sentence is to use "o(a)".
 It's important to note that this strategy is not adopted by the French and
 Italian teams, who prefer to simply use the masculine term "usuário". Unless
 there is some guideline discouraging resources such as "o(a)", we believe that
-our our standard is preferable.
+our standard is preferable.
 
 ### Glossary
 
@@ -171,7 +171,7 @@ We have tried to use the most common versions of each term, but it's not always
 possible to keep a precise account. For example, if you are searching for
 "_caching_", the corresponding entry is "_cache_". The same word can also have
 several functions, such as "_replacement_", which simultaneously means
-"substitute" (substituto) and "replacement" (substituição).
+"substituto" and "substituição".
 
 Finally, we have chosen to keep some of the terms in English, as their
 translations are not widely used, but this perception is purely subjective; the
