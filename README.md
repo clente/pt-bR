@@ -70,7 +70,7 @@ alternative wouldn't sound as natural.
 
 > Talvez o pacote tenha sido instalado com uma versão do R mais recente que %s ?
 
-We also don't translate anything that is a technical term form R like, for
+We also don't translate anything that is a technical term from R like, for
 example, function names, objects and arguments (usually between quotes).
 
 > _'MARGIN' does not match dim(X)_
